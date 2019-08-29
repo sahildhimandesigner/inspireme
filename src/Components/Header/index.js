@@ -25,7 +25,7 @@ const menuList = [
     },
     {
         id: 3,
-        url: '/AuthourList',
+        url: '/Author',
         link:'Authour List'
     },    
   ]
