@@ -168,4 +168,5 @@ export const RandomQuotes = [
       category: "Famous"
     }
   ];
-export const randomQuotes = () => new Promise(res => res(RandomQuotes));
+export const randomQuotes = (todayDate) => new Promise(res => res(RandomQuotes[todayDate + 1]));
+export const allQuotes = () => new Promise(res => res(RandomQuotes));

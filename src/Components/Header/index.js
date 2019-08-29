@@ -20,7 +20,7 @@ const menuList = [
     },
     {
       id: 2,
-      url: '/QuoteList',
+      url: '/Quotes',
       link:'Quote List'
     },
     {

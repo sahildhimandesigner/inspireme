@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { randomQuotes } from './../../API/random_quotes'
+import { allQuotes } from './../../API/'
 import DailyQuote from "../../Components/DailyQuote";
 
 const QuoteList = () => {
-    const [allQuotes, setQuotes] = useState([])    
+    const [allQuote, setQuotes] = useState([])    
     useEffect(() => {
-        randomQuotes().then(data => setQuotes(data)); 
+        allQuotes().then(data => setQuotes(data)); 
     });   
     
     return (
         <div>
-            {allQuotes && allQuotes.map((quotelistitem) => <DailyQuote todayQuote={quotelistitem} /> )}
+            {allQuote && allQuote.map((quotelistitem) => <DailyQuote todayQuote={quotelistitem} /> )}
         </div>
     )
 }

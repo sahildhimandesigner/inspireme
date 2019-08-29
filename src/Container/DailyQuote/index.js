@@ -1,16 +1,15 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import DailyQuotes from './../../Components/DailyQuote'
-import { RandomQuotes } from './../../API/random_quotes'
-
-const todayDate = new Date().getDate();
-const todayQuote = RandomQuotes[todayDate + 1];
+import { randomQuotes } from './../../API/random_quotes'
 
 const DailyQuote = () => {
-    return (
-        <div>
-            <DailyQuotes todayQuote={todayQuote} />
-        </div>
-    )
+    const todayDate = new Date().getDate();
+
+    const [dailyQuote, setDailyQuote] = useState([]);
+    useEffect(()=> {
+        randomQuotes(todayDate).then(data => setDailyQuote(data))
+    })
+    return <DailyQuotes todayQuote={dailyQuote} />    
 }
 
 export default DailyQuote;
