@@ -1,0 +1,97 @@
+[{
+      "author": "Sir Winston Churchill ",
+      "category": "Famous"
+    },
+    {
+      "quote": "He who has a 'why' to live, can bear with almost any 'how'.",
+      "id":42,
+      "author": "Friedrich Nietzsche",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I'm all in favor of keeping dangerous weapons out of the hands of fools. Let's start with typewriters.",
+      "id":43, 
+      "author": "Frank Lloyd Wright",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I am ready to meet my Maker. Whether my Maker is prepared for the great ordeal of meeting me is another matter.",
+      "id":44,  
+      "author": "Sir Winston Churchill",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "You can avoid reality, but you cannot avoid the consequences of avoiding reality.",
+      "id":45,  
+      "author": "Ayn Rand",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I can write better than anybody who can write faster, and I can write faster than anybody who can write better.",
+      "id":46, 
+      "author": "A. J. Liebling",
+      "category": "Famous"
+    },
+    {
+      "quote": "This book fills a much-needed gap.",
+      "id":47,
+      "author": "Moses Hadas in a review",
+      "category": "Famous"
+    },
+    {
+      "quote": "A mathematician is a device for turning coffee into theorems.",
+      "id":48,
+      "author": "Paul Erdos",
+      "category": "Famous"
+    },
+    {
+      "quote": "The only difference between me and a madman is that I'm not mad.",
+      "id":49,
+      "author": "Salvador Dali",
+      "category": "Famous"
+    },
+    {
+      "quote": "Never interrupt your enemy when he is making a mistake.",
+      "id":50,
+      "author": "Napoleon Bonaparte",
+      "category": "Famous"
+    },
+    {
+      "quote": "If you are going through hell, keep going.",
+      "id":51,
+      "author": "Sir Winston Churchill ",
+      "category": "Famous"
+    },
+    {
+      "quote": "He who has a 'why' to live, can bear with almost any 'how'.",
+      "id":52,
+      "author": "Friedrich Nietzsche",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I'm all in favor of keeping dangerous weapons out of the hands of fools. Let's start with typewriters.",
+      "id":53,  
+      "author": "Frank Lloyd Wright",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I am ready to meet my Maker. Whether my Maker is prepared for the great ordeal of meeting me is another matter.",
+      "id":54,  
+      "author": "Sir Winston Churchill",
+      "category": "Famous"
+    },
+    {
+      "quote":
+        "I am ready to meet my Maker. Whether my Maker is prepared for the great ordeal of meeting me is another matter.",
+      "id":55,  
+      "author": "Churchill",
+      "category": "Famous"
+    }
+    
+  ]
