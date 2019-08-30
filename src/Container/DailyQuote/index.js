@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import DailyQuotes from './../../Components/DailyQuote'
+import { Quotes } from '../../Components/Quotes'
 import { randomQuotes } from './../../API/random_quotes'
 
 const DailyQuote = () => {
@@ -9,7 +9,7 @@ const DailyQuote = () => {
     useEffect(()=> {
         randomQuotes(todayDate).then(data => setDailyQuote(data))
     })
-    return <DailyQuotes todayQuote={dailyQuote} />    
+    return <Quotes todayQuote={dailyQuote} />    
 }
 
 export default DailyQuote;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { allQuotes } from './../../API/'
-import DailyQuote from "../../Components/DailyQuote";
+import { Quotes } from "../../Components/Quotes";
 
 const QuoteList = () => {
     const [allQuote, setQuotes] = useState([])    
@@ -10,7 +10,7 @@ const QuoteList = () => {
     
     return (
         <div>
-            {allQuote && allQuote.map((quotelistitem, index) => <DailyQuote key={`allquote_${index}`} todayQuote={quotelistitem} /> )}
+            {allQuote && allQuote.map((quotelistitem, index) => <Quotes key={`allquote_${index}`} todayQuote={quotelistitem} /> )}
         </div>
     )
 }
