@@ -12,7 +12,7 @@ const AuthourList = () => {
         <div>            
             {//console.log(authourList)                
                  authourList && authourList.map( quotelistitem => ( 
-                     <p>                
+                     <p key={quotelistitem.id}>                
                         <Link to={`/author/${quotelistitem.id}`}>{quotelistitem.author}</Link>
                     </p>
                  ))                                

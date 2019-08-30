@@ -38,15 +38,14 @@ const AuthourDetail = ({classes, history, match: { params: { id } } }) => {
     useEffect(()=> {
         authorsDetails(id).then(data => setQuotes(data));        
     })
-    console.log('asd', authourList);
     
     return(
         <div>     
             <button className={classes.backButton} onClick={() => history.push('/Author')}>&lt; Go Back</button>       
             {
-                 authourList && authourList.quote && authourList.quote.map( quotelistitem => ( 
-                    <div className={classes.quoteContainer}> 
-                        <p className={classes.quoteDetail}><strong>Quote: </strong> {quotelistitem.quote}</p>
+                 authourList && authourList.quote && authourList.quote.map( (quotelistitem, index) => ( 
+                    <div key={`quote_${index}`} className={classes.quoteContainer}> 
+                        <p className={classes.quoteDetail}><strong>Quote: {quotelistitem.id}</strong> {quotelistitem.quote}</p>
                     </div>
                  ))                                
             }

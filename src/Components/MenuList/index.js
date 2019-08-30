@@ -26,7 +26,7 @@ const MenuList = ({classes, ...props}) => {
         <ul className={classes.menuContainer}>            
             {props.nav.map((menlink) => {
                 return (
-                    <li className={classes.navLink}> <Link className={classes.menuIteam} to={menlink.url}>{menlink.link}</Link></li>
+                    <li key={menlink.id} className={classes.navLink}> <Link className={classes.menuIteam} to={menlink.url}>{menlink.link}</Link></li>
                 )
             })}        
         </ul>

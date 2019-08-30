@@ -590,7 +590,7 @@ export const quotesList = [
   ];
   export const authors = () => new Promise(res => res(quotesList))
   export const authorsDetails = (id) => new Promise(res => {
-    const authorDetails = quotesList.find((quote) => quote.id == id);
+    const authorDetails = quotesList.find((quote) => parseInt(quote.id) === parseInt(id));
     res(authorDetails)}
   );
 

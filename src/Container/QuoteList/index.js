@@ -10,7 +10,7 @@ const QuoteList = () => {
     
     return (
         <div>
-            {allQuote && allQuote.map((quotelistitem) => <DailyQuote todayQuote={quotelistitem} /> )}
+            {allQuote && allQuote.map((quotelistitem, index) => <DailyQuote key={`allquote_${index}`} todayQuote={quotelistitem} /> )}
         </div>
     )
 }
