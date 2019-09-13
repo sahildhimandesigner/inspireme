@@ -5,6 +5,7 @@ import DailyQuote from './Container/DailyQuote'
 import QuoteList from './Container/QuoteList'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Header from './Components/Header'
+import { AddQuote } from './Components/AddQuote'
 import AuthourList from './Container/AuthourList';
 import AuthourDetail from './Container/AuthorDetail';
 import * as serviceWorker from './serviceWorker';
@@ -17,7 +18,8 @@ ReactDOM.render(
       <Switch>
         <Route path="/author/:id" component={AuthourDetail} />
         <Route path="/Quotes" component={QuoteList} />
-        <Route path="/Author" component={AuthourList} />          
+        <Route path="/Author" component={AuthourList} />
+        <Route path="/AddQuote" component={AddQuote} />          
         <Route path="/" component={DailyQuote} />
       </Switch>
     </BrowserRouter>, document.getElementById('root'));
