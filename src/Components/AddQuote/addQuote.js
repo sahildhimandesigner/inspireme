@@ -3,7 +3,7 @@ import { Formik } from 'formik'
 import withStyle from 'react-jss'
 import { formStyle } from './AddQuote.style'
 
-const AddQuote = ({ classes}) => {
+const AddQuote = ({ classes}) => {    
     return(
         <div className={classes.formContainer}>
         <h1>Add Your Quotes</h1>
@@ -19,7 +19,9 @@ const AddQuote = ({ classes}) => {
               } 
             return errors;
           }}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(values, { setSubmitting }) => {              
+            let formdata = [{author: values.author, quote: values.quote}];
+            localStorage.setItem('formdata', JSON.stringify(formdata));
             setTimeout(() => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
