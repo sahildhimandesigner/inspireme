@@ -21,7 +21,14 @@ const AddQuote = ({ classes}) => {
           }}
           onSubmit={(values, { setSubmitting }) => {              
             let formdata = [{author: values.author, quote: values.quote}];
-            localStorage.setItem('formdata', JSON.stringify(formdata));
+            if(!localStorage.getItem('formdata')) {
+                localStorage.setItem('formdata', JSON.stringify(formdata));
+            } else {
+                let data = JSON.parse(localStorage.getItem('formdata'));
+                data.concat(formdata); 
+                console.log(data);
+
+            }
             setTimeout(() => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
